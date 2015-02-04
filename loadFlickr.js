@@ -16,9 +16,9 @@ var loadFlickr = function(obj,set,apiKey){
 
 					//for each photo returned from our json call
 						//creating div on the page
-						var newDiv = document.createElement("div");
+						var newDiv = document.createElement("p");
 						//setting the new divs class as content
-						newDiv.className = "content";
+						newDiv.className = "mattsawesmoeclass";
 						//creating a new img tag on the page
 						var newImg = document.createElement("img");
 						//setting the thumburl as the img src, this is for the thumbnails
@@ -28,7 +28,7 @@ var loadFlickr = function(obj,set,apiKey){
 						//appending the img to the new div i created
 						newDiv.appendChild(newImg);
 						//creating a span tag on the page
-						var newSpan = document.createElement("span");
+						var newSpan = document.createElement("div");
 						//setting the span text to the title pulled from the json
 						newSpan.innerHTML = flickrData.photoset.photo[i].title;
 						//appending the span tag to our div
